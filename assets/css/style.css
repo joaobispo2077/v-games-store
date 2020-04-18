@@ -1,5 +1,5 @@
 .app {
-    background: #f1f1f1;
+     background: #f1f1f1; 
     display: grid;  
     font-family: Arial, Helvetica, sans-serif;
     grid-template-areas: 
@@ -8,20 +8,30 @@
     "rodape";
     grid-template-columns: auto;
 
-    grid-template-rows: 50px 100vh auto;
+    grid-template-rows: 50px auto auto;
 }
 
 .cabecalho {
     grid-area: cabecalho;
-    background: #00cc99;
+    display: flex;
+    align-items: center;
+    padding: 0 2rem;
+    /* background: #00cc99; */
 }
  
 .conteudo {
     grid-area: conteudo;
-    background: #ff8080;
+    padding: 0 2rem;
+    /* background: #ff8080; */
 }
 
 .rodape {
     grid-area: rodape;
-    background: #0099ff;
+    background: #fdfdfd;
+    color: #333333;
+    font-size: .8rem;
+    padding: 1rem;
+    text-align: center;
+    /*  */
+    /* background: #0099ff; */
 }
